@@ -1,1 +1,12 @@
-{ "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
+{ "rewrites": [{ "source": "/(.*)", "destination": "/" }],
+   "routes": [
+    {
+        "src": ".",
+        "dest": "/"
+    },
+    {
+        "src": "/home/:mode/:id",
+        "dest": "/"
+    }
+   ] 
+}
